@@ -4,7 +4,7 @@ public:
         map<char,int> m={{'0',0},{'1',1},{'2',2},{'3',3},
         {'4',4},{'5',5},{'6',6},{'7',7},{'8',8},{'9',9}};
 
-        double res=0;
+        int res=0;
         int len=s.length();
         int mul=1;
         int i=0;
@@ -16,19 +16,22 @@ public:
             if(s[i]=='+') mul=1;
             i++;
         }
+        
         for(;i<len;i++){
+            
             if(isdigit(s[i])){
-                if((mul*res*10)+(m[s[i]])>INT_MAX)return INT_MAX;
-                if((mul*res*10)+(m[s[i]])<INT_MIN) return INT_MIN;
-                
+                if(res>INT_MAX/10 || res==INT_MAX/10 && m[s[i]]>7 ){
+                    if(mul==-1){
+                        return INT_MIN; 
+                    }else return INT_MAX;
+                }
                 res=res*10+m[s[i]];
                 cout<<s[i]<<":"<<res<<"||";
             }else{
                 return mul*res;  
             }
         }
-        if(mul*res>INT_MAX) return INT_MAX;
-        if(mul*res<INT_MIN) return INT_MIN;
+       
         return mul*res;
     }
 };
