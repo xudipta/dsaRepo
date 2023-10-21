@@ -1,0 +1,33 @@
+**Dynamic Programming**
+    => Enhanced Recursion  (Recursion + Storage)
+
+**Recursion/ DP**  
+    1. Choice  
+        a. if 1 Rec -> X DP  
+        b. more than 2 Rec  
+    2. optimal  
+
+**Process**  
+    Recursive -> Memoize -> Top-Down
+
+**Problems**
+    1. 0-1 knapsack (6)
+        1. Subset sum
+        2. Equal sum partition
+        3. Count of subset sum
+        4. Minimum subset sum
+        5. Target sum
+        6. # of subset & gives difference
+    2. Unbounded Knapsack (5)
+    3. Fibonacci (7)
+    4. LCS (15)
+    5. LIS (10)
+    6. Kadane's Algorithms (6)
+    7. Matrix chain multiplication (7)
+    8. DP on trees (4)
+    9. DP on Grid (14)
+    10. others (5)
+
+**0-1 Knapsack**  
+
+
