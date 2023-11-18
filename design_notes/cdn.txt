@@ -1,0 +1,33 @@
+Cache:
+	browser 
+		|- HTML/js/images 
+	DNS 
+		|- DNS records
+		
+**CDN
+	|- Features
+		|- Content Delivery Network
+		|- caches
+		|- ** geographically distributed group of servers that caches content close to end user
+		|- can reduce amount of data that's transferred by reducing file sizes using *minification* (removing white spaces, short var name without hampering the functionality
+		|- optimizing connection reuse of TLS/SSL and enabling TLS false start
+	
+	|- Providers
+		|- cloudFare
+		|- Fastly
+		|- keyCDN
+		|- StackPath
+		|- Akamai
+		|- AWS CloudFront
+		|- MS Azure CDN
+		|- CloudCDN by google | MediaCDN
+	
+	|- Reliability & Redundancy
+		|- LB (distributes traffic evently)
+			|- making it easier to scale
+		|- Intelligent failover 
+			|- if one/more CND goes down -> redistribute
+		|- Anycast routing transfers the traffic to another available data center
+		
+
+		

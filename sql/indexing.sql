@@ -20,3 +20,9 @@ insert into index_demo
 	select * from index_demo_distinct;
 -- delete table
 drop table index_demo_distinct;
+-- ----------------------------------
+
+explain select * from index_demo where name="Kalpesh";
+show indexes from index_demo;
+alter table index_demo add primary key(phone_no);
+explain select * from index_demo where phone_no = 1234567890;
